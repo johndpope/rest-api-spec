@@ -1,0 +1,32 @@
+name: figma_api_client
+description: Flutter client for Figma REST API generated from OpenAPI spec
+version: 0.35.0
+publish_to: none
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  openapi_generator_annotations:
+    git:
+      url: https://github.com/johndpope/openapi-generator-dart.git
+      ref: 23ba694b07a350767a4a31acb9cb71bfb9d57fc2
+      path: openapi-generator-annotations
+  dio: ^5.4.0
+  json_annotation: ^4.8.1
+  built_value: ^8.9.0
+  built_collection: ^5.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  openapi_generator:
+    git:
+      url: https://github.com/johndpope/openapi-generator-dart.git
+      ref: 23ba694b07a350767a4a31acb9cb71bfb9d57fc2
+      path: openapi-generator
+  build_runner: ^2.4.0
+  json_serializable: ^6.7.1
+  built_value_generator: ^8.9.0
